@@ -1,3 +1,28 @@
  http://127.0.0.1:8000/
 
-$ pipenv run python manage.py runserver
+pipenv run python manage.py runserver
+
+Admin-> 
+http://127.0.0.1:8000/admin/
+-> http://127.0.0.1:8000/recipe/
+http://127.0.0.1:8000/#
+http://localhost:8000/staffroom/
+
+マイグレーション
+
+pipenv run python manage.py makemigrations
+pipenv run python manage.py migrate
+
+ページの更新
+1 Viewを作る
+2 テンプレートを作る
+3 urls.pyでURLを作成する
+
+Query set
+pipenv run python manage.py shell
+
+Setの仕方は"Model.objects.取得したいデータに対応したメソッド"
+
+Makemaigrations
+->pipenv run python manage.py makemigrations
+pipenv run python manage.py migrate
